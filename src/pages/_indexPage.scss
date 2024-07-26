@@ -9,15 +9,10 @@
 		color: white;
 		align-items: center;
 		font-size: 1.6em;
-		&::before {
-			content: "";
-			margin-right: 0.5em;
-			width: 1.3em;
-			height: 2px;
-			background: white;
-		}
 	}
 	.emby-scroller {
+		padding-right: max(env(safe-area-inset-right), 3%);
+		padding-left: max(env(safe-area-inset-right), 3%);
 		.emby-button:not(.cardOverlayButton) {
 			margin-right: 1.2em;
 			border-radius: ab.$rounding-default;
